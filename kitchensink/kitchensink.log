@@ -1,0 +1,186 @@
+2025-03-28T00:22:48.136+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m39s931ms).
+2025-03-28T01:36:56.256+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h14m8s120ms).
+2025-03-28T01:42:07.362+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s106ms).
+2025-03-28T03:15:13.656+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h33m6s294ms).
+2025-03-28T03:46:25.881+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m12s225ms).
+2025-03-28T05:36:38.436+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h50m12s554ms).
+2025-03-28T06:03:25.470+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m47s35ms).
+2025-03-28T06:48:19.125+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m53s655ms).
+2025-03-28T07:49:14.280+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55s155ms).
+2025-03-28T08:25:19.545+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m5s265ms).
+2025-03-28T08:42:45.981+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m26s436ms).
+2025-03-28T09:02:56.997+01:00  WARN 37025 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m11s16ms).
+2025-03-28T09:03:10.051+01:00  INFO 37025 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:03:10.053+01:00  INFO 37025 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:03:10.054+01:00  INFO 37025 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-28T09:10:18.913+01:00  INFO 39797 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 39797 (/Users/marcosordi/Documents/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/kitchensink)
+2025-03-28T09:10:18.913+01:00  INFO 39797 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:10:19.114+01:00  INFO 39797 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:10:19.173+01:00  INFO 39797 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-03-28T09:10:19.452+01:00  INFO 39797 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:10:19.457+01:00  INFO 39797 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:10:19.457+01:00  INFO 39797 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:10:19.483+01:00  INFO 39797 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:10:19.484+01:00  INFO 39797 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 534 ms
+2025-03-28T09:10:19.498+01:00  INFO 39797 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:10:19.577+01:00  INFO 39797 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:10:19.578+01:00  INFO 39797 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:10:19.584+01:00  INFO 39797 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:10:19.654+01:00  INFO 39797 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:10:19.675+01:00  INFO 39797 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:10:19.743+01:00  WARN 39797 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:10:19.793+01:00  INFO 39797 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:10:20.117+01:00  INFO 39797 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:10:20.121+01:00  INFO 39797 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:10:20.299+01:00  WARN 39797 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:10:20.310+01:00  INFO 39797 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:10:20.445+01:00  INFO 39797 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:10:20.450+01:00  INFO 39797 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.685 seconds (process running for 1.841)
+2025-03-28T09:10:36.536+01:00  INFO 39797 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28T09:10:36.537+01:00  INFO 39797 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-28T09:10:36.538+01:00  INFO 39797 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-28T09:11:11.797+01:00  INFO 39797 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:11:11.798+01:00  INFO 39797 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:11:11.799+01:00  INFO 39797 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-28T09:11:18.609+01:00  INFO 39866 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 39866 (/Users/marcosordi/Documents/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/kitchensink)
+2025-03-28T09:11:18.610+01:00  INFO 39866 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:11:18.810+01:00  INFO 39866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:11:18.870+01:00  INFO 39866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-03-28T09:11:19.151+01:00  INFO 39866 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:11:19.157+01:00  INFO 39866 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:11:19.157+01:00  INFO 39866 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:11:19.181+01:00  INFO 39866 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:11:19.181+01:00  INFO 39866 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 536 ms
+2025-03-28T09:11:19.195+01:00  INFO 39866 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:11:19.277+01:00  INFO 39866 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:11:19.278+01:00  INFO 39866 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:11:19.284+01:00  INFO 39866 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:11:19.353+01:00  INFO 39866 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:11:19.372+01:00  INFO 39866 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:11:19.441+01:00  WARN 39866 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:11:19.494+01:00  INFO 39866 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:11:19.811+01:00  INFO 39866 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:11:19.814+01:00  INFO 39866 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:11:20.008+01:00  WARN 39866 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:11:20.019+01:00  INFO 39866 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:11:20.154+01:00  INFO 39866 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:11:20.158+01:00  INFO 39866 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.704 seconds (process running for 1.865)
+2025-03-28T09:11:26.087+01:00  INFO 39866 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28T09:11:26.087+01:00  INFO 39866 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-28T09:11:26.088+01:00  INFO 39866 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-28T09:11:55.037+01:00  INFO 39866 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:11:55.038+01:00  INFO 39866 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:11:55.040+01:00  INFO 39866 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-28T09:12:04.276+01:00  INFO 39930 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 39930 (/Users/marcosordi/Documents/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/kitchensink)
+2025-03-28T09:12:04.277+01:00  INFO 39930 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:12:04.477+01:00  INFO 39930 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:12:04.536+01:00  INFO 39930 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-03-28T09:12:04.818+01:00  INFO 39930 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:12:04.823+01:00  INFO 39930 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:12:04.823+01:00  INFO 39930 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:12:04.848+01:00  INFO 39930 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:12:04.848+01:00  INFO 39930 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 537 ms
+2025-03-28T09:12:04.861+01:00  INFO 39930 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:12:04.949+01:00  INFO 39930 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:12:04.949+01:00  INFO 39930 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:12:04.956+01:00  INFO 39930 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:12:05.026+01:00  INFO 39930 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:12:05.046+01:00  INFO 39930 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:12:05.115+01:00  WARN 39930 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:12:05.165+01:00  INFO 39930 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:12:05.500+01:00  INFO 39930 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:12:05.505+01:00  INFO 39930 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:12:05.693+01:00  WARN 39930 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:12:05.703+01:00  INFO 39930 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:12:05.837+01:00  INFO 39930 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:12:05.842+01:00  INFO 39930 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.716 seconds (process running for 1.875)
+2025-03-28T09:12:06.925+01:00  INFO 39930 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28T09:12:06.925+01:00  INFO 39930 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-28T09:12:06.926+01:00  INFO 39930 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-28T09:12:41.691+01:00  INFO 39930 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:12:41.693+01:00  INFO 39930 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:12:41.694+01:00  INFO 39930 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-28T09:12:49.739+01:00  INFO 39992 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 39992 (/Users/marcosordi/Documents/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/kitchensink)
+2025-03-28T09:12:49.740+01:00  INFO 39992 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:12:49.946+01:00  INFO 39992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:12:50.009+01:00  INFO 39992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-03-28T09:12:50.296+01:00  INFO 39992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:12:50.302+01:00  INFO 39992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:12:50.302+01:00  INFO 39992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:12:50.326+01:00  INFO 39992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:12:50.327+01:00  INFO 39992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 551 ms
+2025-03-28T09:12:50.339+01:00  INFO 39992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:12:50.416+01:00  INFO 39992 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:12:50.417+01:00  INFO 39992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:12:50.424+01:00  INFO 39992 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:12:50.492+01:00  INFO 39992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:12:50.512+01:00  INFO 39992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:12:50.578+01:00  WARN 39992 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:12:50.626+01:00  INFO 39992 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:12:50.949+01:00  INFO 39992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:12:50.952+01:00  INFO 39992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:12:51.139+01:00  WARN 39992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:12:51.150+01:00  INFO 39992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:12:51.287+01:00  INFO 39992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:12:51.291+01:00  INFO 39992 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.709 seconds (process running for 1.867)
+2025-03-28T09:12:55.668+01:00  INFO 39992 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28T09:12:55.668+01:00  INFO 39992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-28T09:12:55.669+01:00  INFO 39992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-28T09:13:37.112+01:00  INFO 39992 --- [http-nio-8080-exec-3] o.j.a.q.kitchensink.util.Resources       : Registering John Doe
+2025-03-28T09:27:21.142+01:00  WARN 39992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m30s575ms).
+2025-03-28T09:34:09.211+01:00  INFO 40874 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 40874 (/Users/marcosordi/Documents/mongodb/kitchensinkh2/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/mongodb/kitchensinkh2/kitchensink)
+2025-03-28T09:34:09.212+01:00  INFO 40874 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:34:09.413+01:00  INFO 40874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:34:09.474+01:00  INFO 40874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-03-28T09:34:09.759+01:00  INFO 40874 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:34:09.765+01:00  INFO 40874 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:34:09.765+01:00  INFO 40874 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:34:09.789+01:00  INFO 40874 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:34:09.790+01:00  INFO 40874 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 542 ms
+2025-03-28T09:34:09.803+01:00  INFO 40874 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:34:09.881+01:00  INFO 40874 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:34:09.881+01:00  INFO 40874 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:34:09.887+01:00  INFO 40874 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:34:09.957+01:00  INFO 40874 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:34:09.976+01:00  INFO 40874 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:34:10.048+01:00  WARN 40874 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:34:10.103+01:00  INFO 40874 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:34:10.423+01:00  INFO 40874 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:34:10.427+01:00  INFO 40874 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:34:10.611+01:00  WARN 40874 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:34:10.622+01:00  INFO 40874 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:34:10.755+01:00  INFO 40874 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:34:10.760+01:00  INFO 40874 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.703 seconds (process running for 1.863)
+2025-03-28T09:34:17.323+01:00  INFO 40874 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-28T09:34:17.324+01:00  INFO 40874 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-28T09:34:17.324+01:00  INFO 40874 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-28T09:34:21.145+01:00  INFO 40874 --- [http-nio-8080-exec-3] o.j.a.q.kitchensink.util.Resources       : Registering John Doe
+2025-03-28T09:35:15.272+01:00  INFO 40874 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:35:15.274+01:00  INFO 40874 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:35:15.275+01:00  INFO 40874 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-28T09:35:22.793+01:00  INFO 40938 --- [main] o.j.a.q.k.controller.MemberController    : Starting MemberController using Java 23.0.2 with PID 40938 (/Users/marcosordi/Documents/mongodb/kitchensinkh2/kitchensink/target/classes started by marcosordi in /Users/marcosordi/Documents/mongodb/kitchensinkh2/kitchensink)
+2025-03-28T09:35:22.793+01:00  INFO 40938 --- [main] o.j.a.q.k.controller.MemberController    : No active profile set, falling back to 1 default profile: "default"
+2025-03-28T09:35:23.003+01:00  INFO 40938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-28T09:35:23.065+01:00  INFO 40938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-03-28T09:35:23.343+01:00  INFO 40938 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-28T09:35:23.349+01:00  INFO 40938 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-28T09:35:23.349+01:00  INFO 40938 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-03-28T09:35:23.372+01:00  INFO 40938 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-28T09:35:23.372+01:00  INFO 40938 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 544 ms
+2025-03-28T09:35:23.385+01:00  INFO 40938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-28T09:35:23.460+01:00  INFO 40938 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kitchensink-quickstart user=SA
+2025-03-28T09:35:23.460+01:00  INFO 40938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-28T09:35:23.466+01:00  INFO 40938 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kitchensink-quickstart'
+2025-03-28T09:35:23.534+01:00  INFO 40938 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-28T09:35:23.554+01:00  INFO 40938 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2025-03-28T09:35:23.623+01:00  WARN 40938 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-03-28T09:35:23.676+01:00  INFO 40938 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-28T09:35:23.982+01:00  INFO 40938 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-28T09:35:23.985+01:00  INFO 40938 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:35:24.166+01:00  WARN 40938 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-28T09:35:24.177+01:00  INFO 40938 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2025-03-28T09:35:24.311+01:00  INFO 40938 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-28T09:35:24.315+01:00  INFO 40938 --- [main] o.j.a.q.k.controller.MemberController    : Started MemberController in 1.673 seconds (process running for 1.83)
+2025-03-28T09:35:58.072+01:00  INFO 40938 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-28T09:35:58.074+01:00  INFO 40938 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-28T09:35:58.075+01:00  INFO 40938 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
