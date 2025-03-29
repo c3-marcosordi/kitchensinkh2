@@ -16,18 +16,23 @@
     limitations under the License.
 -->
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:ui="jakarta.faces.facelets"
-                xmlns:f="jakarta.faces.core"
-                xmlns:h="jakarta.faces.html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
                 template="/WEB-INF/templates/default.xhtml">
     <ui:define name="content">
         <h1>Welcome to JBoss!</h1>
-
+        <!-- Debug Form -->
+        <h:form id="debug">
+            <h2>Prova</h2>
+            <h:panelGrid columns="1">
+                <h:outputText value="#{memberController.members}" />
+            </h:panelGrid>
+        </h:form>
         <div>
             <p>You have successfully deployed a Jakarta EE Enterprise
                 Application.</p>
         </div>
-
         <h:form id="reg">
             <h2>Member Registration</h2>
             <p>Enforces annotation-based constraints defined on the
@@ -46,7 +51,6 @@
                              value="#{newMember.phoneNumber}" />
                 <h:message for="phoneNumber" errorClass="invalid" />
             </h:panelGrid>
-
             <p>
                 <h:panelGrid columns="2">
                     <h:commandButton id="register"
@@ -59,11 +63,11 @@
             </p>
         </h:form>
         <h2>Members</h2>
-        <h:panelGroup rendered="#{empty members}">
+        <h:panelGroup rendered="#{empty memberController.members}">
             <em>No registered members.</em>
         </h:panelGroup>
-        <h:dataTable var="_member" value="#{members}"
-                     rendered="#{not empty members}"
+        <h:dataTable var="_member" value="#{memberController.members}"
+                     rendered="#{not empty memberController.members}"
                      styleClass="simpletablestyle">
             <h:column>
                 <f:facet name="header">Id</f:facet>
@@ -84,11 +88,11 @@
             <h:column>
                 <f:facet name="header">REST URL</f:facet>
                 <a
-                    href="#{request.contextPath}/rest/members/#{_member.id}">/rest/members/#{_member.id}</a>
+                    href="http://localhost:8080/members/allMembers">members/allMembers</a>
             </h:column>
             <f:facet name="footer">
                 REST URL for all members: <a
-                    href="#{request.contextPath}/rest/members">/rest/members</a>
+                    href="http://localhost:8080/members/allMembers">/members/allMembers</a>
             </f:facet>
         </h:dataTable>
     </ui:define>

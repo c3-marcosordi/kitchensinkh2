@@ -1,100 +1,81 @@
 package org.jboss.as.quickstarts.kitchensink.controller;
 
-import java.io.InputStream;
-
 import org.jboss.as.quickstarts.kitchensink.data.MemberRepository;
 import org.jboss.as.quickstarts.kitchensink.model.Member;
 import org.jboss.as.quickstarts.kitchensink.service.MemberRegistration;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import jakarta.validation.Valid;
-import java.util.List;
+
 import jakarta.annotation.PostConstruct;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
 
-//@Controller
-@SpringBootApplication
-@RequestMapping("/members")
-@RestController
-@ComponentScan(basePackages = "org.jboss.as.quickstarts.kitchensink")
-@EnableJpaRepositories(basePackages = "org.jboss.as.quickstarts.kitchensink.data")
-public class MemberController extends SpringBootServletInitializer {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-    public static void main(String[] args) {
-        SpringApplication.run(MemberController.class, args);
-    }
+@Named
+@ViewScoped
+@Component
+public class MemberController implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-     @Autowired
-    private MemberRepository memberRepository;
+    private static final Logger logger = Logger.getLogger(MemberController.class.getName());
 
+    private List<Member> members = new ArrayList<>();
+    private Member newMember = new Member();
+
+    private final MemberRepository memberRepository;
+    private final MemberRegistration memberRegistration;
+
+    // Constructor-based dependency injection
     @Autowired
-    private MemberRegistration memberRegistration;
-
-    @ModelAttribute("newMember")
-    public Member newMember() {
-        return new Member();
-    }
-
-    @GetMapping("/register")
-    public String showRegistrationForm(Model model) {
-        return "register";
-    }
-
-    @GetMapping("/allMembers")
-    public List<Member> getAllMembers() {
-        System.out.println("I'm here cazzo");
-        return memberRepository.findAllByOrderByNameAsc();
+    public MemberController(MemberRepository memberRepository, 
+                             MemberRegistration memberRegistration) {
+        this.memberRepository = memberRepository;
+        this.memberRegistration = memberRegistration;
     }
 
     @PostConstruct
-    public void initNewMember() {
-        newMember();
+    public void init() {
+        loadMembers();
     }
 
-    @PostMapping("/register")
-    public String register( @Valid @RequestBody Member newMember, RedirectAttributes redirectAttributes) {
-        System.out.println("newMember is  " + newMember);
+    public void loadMembers() {
+        try {
+            this.members = memberRepository.findAllByOrderByNameAsc();
+            logger.info("Total members cazzo found: " + members.size());
+        } catch (Exception e) {
+            logger.severe("Error loading members: " + e.getMessage());
+            this.members = new ArrayList<>();
+        }
+    }
+
+    public void register() {
         try {
             memberRegistration.register(newMember);
-            redirectAttributes.addFlashAttribute("message", "Registered! Registration successful");
-            return "redirect:/register";
+            loadMembers(); // Refresh the list after registration
+            newMember = new Member(); // Reset the form
         } catch (Exception e) {
-            String errorMessage = getRootErrorMessage(e);
-            redirectAttributes.addFlashAttribute("errorMessage", errorMessage);
-            System.out.println(errorMessage);
-            return "redirect:/failed";
+            logger.severe("Registration failed: " + e.getMessage());
         }
     }
 
-    private String getRootErrorMessage(Exception e) {
-        // Default to general error message that registration failed.
-        String errorMessage = "Registration failed. See server log for more information";
-        if (e == null) {
-            // This shouldn't happen, but return the default messages
-            return errorMessage;
-        }
-        // Start with the exception and recurse to find the root cause
-        Throwable t = e;
-        while (t != null) {
-            // Get the message from the Throwable class instance
-            errorMessage = t.getLocalizedMessage();
-            t = t.getCause();
-        }
-        // This is the root cause message
-        return errorMessage;
+    // Getters and Setters
+    public List<Member> getMembers() {
+        return members;
     }
 
+    public void setMembers(List<Member> members) {
+        this.members = members;
+    }
 
+    public Member getNewMember() {
+        return newMember;
+    }
+
+    public void setNewMember(Member newMember) {
+        this.newMember = newMember;
+    }
 }

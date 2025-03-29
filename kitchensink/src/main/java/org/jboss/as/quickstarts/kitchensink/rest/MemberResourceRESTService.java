@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.inject.Inject;
 import jakarta.persistence.NoResultException;
 import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/members")
@@ -49,7 +50,7 @@ public class MemberResourceRESTService {
     }
 
     
-    public ResponseEntity<Member> lookupMemberById(@PathVariable("id") long id) {
+    public ResponseEntity<Member> lookupMemberById(@PathVariable("id") UUID id) {
         Optional<Member> member = repository.findById(id);
         if (member.isPresent()) {
         return new ResponseEntity<>(member.get(), HttpStatus.OK);
